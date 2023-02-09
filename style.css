@@ -1,6 +1,11 @@
 body, html {
     height: 100%;
 }
+ a {
+       color: #FFFFFF;
+         font-family: Arial, sans-serif;
+  text-decoration: none;
+}
 
 body {
     background-image: linear-gradient(to right,rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
