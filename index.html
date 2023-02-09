@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form Clone</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <div class="container">
+            <label for="name" class="labelClass-non-check-radio">Name</label>
+                <input class="inputClass-non-check-radio" type="text" placeholder="Enter your name">
+            
+            <label for="email" class="labelClass-non-check-radio">Email</label>
+                <input class="inputClass-non-check-radio" type="email" placeholder="Enter your Email">
+            
+            <label for="age" class="labelClass-non-check-radio">Age (optional)</label>
+                <input class="inputClass-non-check-radio" type="number" placeholder="Age" min="10" max="99">
+            
+            <label for="role" class="labelClass-non-check-radio">How long have you been working as a freelancer?</label>
+                <select name="role" id="role">
+                    <option value="" disabled selected>Less than 1 year</option>
+                    <option value="student">1-2 year</option>
+                    <option value="full-time-job">3-4 year</option>
+                    <option value="full-time-learner">More than 5 years</option>
+                   
+                </select>
+            
+            <label class="labelClass-non-check-radio radioLabelClass">How do you typically find new clients or projects?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">Upwork or other freelancing websites</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">Referrals from past clients</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">Other</label>
+            </span>
+
+            <label for="favorite" class="labelClass-non-check-radio favoriteFeature">What type of projects do you typically take on?</label>
+            <select name="favorite" id="feature">
+                <option value="" disabled selected></option>
+                <option value="challenges">Social media
+</option>
+                <option value="project">Other</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+            
+            <label for="check-boxes" class="labelClass-non-check-radio favoriteFeature">What type of projects do you typically take on?)</label>
+            <span class="check-boxes-text">
+                <input type="checkbox">Web development
+
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox">  Graphic design
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Writing/Content creation
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Marketing and advertising
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox">Video & Animation
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Music & Audio
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> Business
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox"> 
+Programming & Tech
+            </span>
+            <span class="check-boxes-text">
+                <input type="checkbox">Photography
+            </span>
+          
+           
+
+            <label class="labelClass-non-check-radio favoriteFeature" for="comment">Other</label>
+            <textarea name="comment" id="comment" cols="30" rows="4" placeholder="Other..."></textarea>
+           <label class="labelClass-non-check-radio radioLabelClass">What is your hourly rate for your services?</label>  
+            <span class="radio-span"> 
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">Less than $20</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">$20-$40</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">$40-$70</label>
+            </span>
+          <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">More than $70</label>
+            </span>
+           <label class="labelClass-non-check-radio radioLabelClass">How many hours per week do you typically work as a freelancer?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">Less than 10 hours</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">10-20 hours</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">20-30 hours</label>
+            </span>
+          <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">More than 30 hours</label>
+            </span>
+            <label for="role" class="labelClass-non-check-radio">Have you ever worked with a client who was not satisfied with your work?</label>
+                <select name="role" id="role">
+                    <option value="" disabled selected>Yes</option>
+                    <option value="student">No</option>
+                
+                   
+                </select>
+                <label class="labelClass-non-check-radio radioLabelClass">If yes, how did you handle the situation?</label>  
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                    <label class="likertClass" for="definitely">I refunded their payment</label>
+                </span>  
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                    <label class="likertClass" for="maybe">I redid the work for free</label>
+                </span>
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                    <label class="likertClass" for="not-sure">I negotiated a resolution</label>
+                </span>
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                    <label class="likertClass" for="not-sure"> I cut ties with the client</label>
+                </span>
+          <label class="labelClass-non-check-radio radioLabelClass">Do you work with clients remotely or in-person?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely"> 
+                <label class="likertClass" for="definitely">Remotely</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">In-person
+</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">Both</label>
+          
+          <label class="labelClass-non-check-radio radioLabelClass">What is the most challenging aspect of freelancing for you?
+        </label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely"> Finding new clients</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe"> Balancing work and personal life</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure"> Meeting deadlines</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">  Managing finances</label>
+            </span>
+          <label class="labelClass-non-check-radio radioLabelClass">What is your preferred method of communication with clients?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">Email</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">Phone</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">Video chat</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure"> In-person meetings</label>
+            </span>
+          <label class="labelClass-non-check-radio radioLabelClass">How do you manage your workload and prioritize tasks?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">To-do list</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe"> Calendar</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">Time blocking</label>
+            </span>
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                <label class="likertClass" for="not-sure">Other </label>
+            </span>
+          <label class="labelClass-non-check-radio radioLabelClass">Have you ever had to turn down a project due to workload or deadline constraints?</label>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                <label class="likertClass" for="definitely">Yes</label>
+            </span>  
+            <span class="radio-span">
+                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                <label class="likertClass" for="maybe">No</label>
+            </span>
+            <label class="labelClass-non-check-radio radioLabelClass">How do you handle disagreements or conflicts with clients?
+            </label>  
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                    <label class="likertClass" for="definitely"> Open and honest communication</label>
+                </span>  
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                    <label class="likertClass" for="maybe"> Mediation</label>
+                </span>
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                    <label class="likertClass" for="not-sure">Terminating the project
+                    </label>
+                </span>
+                <span class="radio-span">
+                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                    <label class="likertClass" for="not-sure"> Other</label>
+                </span>
+                <label class="labelClass-non-check-radio radioLabelClass">What sets you apart from other freelancers in your field?
+                </label>  
+                    <span class="radio-span">
+                        <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                        <label class="likertClass" for="definitely">  Quality of work</label>
+                    </span>  
+                    <span class="radio-span">
+                        <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                        <label class="likertClass" for="maybe"> Speed and efficiency</label>
+                    </span>
+                    <span class="radio-span">
+                        <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                        <label class="likertClass" for="not-sure"> Attention to detail</label>
+                    </span>
+                    
+                    <span class="radio-span">
+                        <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                        <label class="likertClass" for="not-sure">  Customer service</label>
+                    </span>
+                    <span class="radio-span">
+                        <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                        <label class="likertClass" for="not-sure">Other</label>
+                    </span>
+                    <label class="labelClass-non-check-radio radioLabelClass">How do you continue to improve and stay current in your field?
+                    </label>  
+                        <span class="radio-span">
+                            <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                            <label class="likertClass" for="definitely">Attend workshops and conferences</label>
+                        </span>  
+                        <span class="radio-span">
+                            <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                            <label class="likertClass" for="maybe"> Take online courses</label>
+                        </span>
+                        <span class="radio-span">
+                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                            <label class="likertClass" for="not-sure"> Read industry publications</label>
+                        </span>
+                        <span class="radio-span">
+                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                            <label class="likertClass" for="not-sure"> Seek feedback from clients</label>
+                        </span>
+                        <span class="radio-span">
+                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                            <label class="likertClass" for="not-sure"> Other</label>
+                        </span>
+                        <label class="labelClass-non-check-radio radioLabelClass">Do you work with a team of other freelancers or contractors?
+                        </label>  
+                            <span class="radio-span">
+                                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                <label class="likertClass" for="definitely"> Yes</label>
+                            </span>  
+                            <span class="radio-span">
+                                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                <label class="likertClass" for="maybe"> No</label>
+                            </span>
+                          
+                            <label class="labelClass-non-check-radio radioLabelClass">Have you ever worked on a project outside of your area of expertise?
+                            </label>  
+                                <span class="radio-span">
+                                    <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                    <label class="likertClass" for="definitely">No</label>
+                                </span>  
+                                <span class="radio-span">
+                                    <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                    <label class="likertClass" for="maybe">Yes</label>
+                                </span>
+                               
+                                <label class="labelClass-non-check-radio radioLabelClass">How do you determine your project fees or charges for clients?
+                                </label>  
+                                    <span class="radio-span">
+                                        <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                        <label class="likertClass" for="definitely">Hourly rate</label>
+                                    </span>  
+                                    <span class="radio-span">
+                                        <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                        <label class="likertClass" for="maybe"> Flat fee</label>
+                                    </span>
+                                    <span class="radio-span">
+                                        <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                        <label class="likertClass" for="not-sure"> Commission-based</label>
+                                    </span>
+                                   
+                                    <label class="labelClass-non-check-radio radioLabelClass">What is your long-term goal as a freelancer?
+                                    </label>  
+                                        <span class="radio-span">
+                                            <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                            <label class="likertClass" for="definitely">Build a sustainable business</label>
+                                        </span>  
+                                        <span class="radio-span">
+                                            <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                            <label class="likertClass" for="maybe"> Eventually transition to a full-time position</label>
+                                        </span>
+                                        <span class="radio-span">
+                                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                            <label class="likertClass" for="not-sure">Stay as a freelancer indefinitely</label>
+                                        </span>
+                                        <span class="radio-span">
+                                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                            <label class="likertClass" for="not-sure">  Other</label>
+                                        </span>
+                                        <label class="labelClass-non-check-radio radioLabelClass">Have you ever had a client who was difficult to work with?
+                                        </label>  
+                                            <span class="radio-span">
+                                                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                <label class="likertClass" for="definitely">Yes</label>
+                                            </span>  
+                                            <span class="radio-span">
+                                                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                <label class="likertClass" for="maybe"> No</label>
+                                            </span>
+                                           
+                                            <label class="labelClass-non-check-radio radioLabelClass">How do you handle payment from clients?
+                                            </label>  
+                                                <span class="radio-span">
+                                                    <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                    <label class="likertClass" for="definitely">Invoicing</label>
+                                                </span>  
+                                                <span class="radio-span">
+                                                    <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                    <label class="likertClass" for="maybe">  Escrow</label>
+                                                </span>
+                                                <span class="radio-span">
+                                                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                    <label class="likertClass" for="not-sure">Upfront payment</label>
+                                                </span>
+                                                <span class="radio-span">
+                                                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                    <label class="likertClass" for="not-sure">  Other</label>
+                                                </span>
+                                                <label class="labelClass-non-check-radio radioLabelClass">How do you handle deadlines and time management?
+                                                </label>  
+                                                    <span class="radio-span">
+                                                        <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                        <label class="likertClass" for="definitely">Strictly adhere to deadlines</label>
+                                                    </span>  
+                                                    <span class="radio-span">
+                                                        <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                        <label class="likertClass" for="maybe"> Negotiate deadlines with clients</label>
+                                                    </span>
+                                                    <span class="radio-span">
+                                                        <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                        <label class="likertClass" for="not-sure">Work ahead of schedule</label>
+                                                    </span>
+                                                    <span class="radio-span">
+                                                        <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                        <label class="likertClass" for="not-sure">  Other</label>
+                                                    </span>
+                                                    <label class="labelClass-non-check-radio radioLabelClass">Do you have a specific niche or area of expertise as a freelancer?
+                                                    </label>  
+                                                        <span class="radio-span">
+                                                            <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                            <label class="likertClass" for="definitely">Yes</label>
+                                                        </span>  
+                                                        <span class="radio-span">
+                                                            <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                            <label class="likertClass" for="maybe"> No</label>
+                                                        </span>
+                                                       
+                                                        <label class="labelClass-non-check-radio radioLabelClass">How do you market your services to potential clients?
+                                                        </label>  
+                                                            <span class="radio-span">
+                                                                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                                <label class="likertClass" for="definitely">Social media</label>
+                                                            </span>  
+                                                            <span class="radio-span">
+                                                                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                                <label class="likertClass" for="maybe">Networking events</label>
+                                                            </span>
+                                                            <span class="radio-span">
+                                                                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                                <label class="likertClass" for="not-sure">Personal website
+                                                                </label>
+                                                            </span>
+                                                            <span class="radio-span">
+                                                                <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                                <label class="likertClass" for="not-sure">  Other</label>
+                                                            </span>
+                                                            <label class="labelClass-non-check-radio radioLabelClass">Do you work with clients on a long-term or short-term basis?
+                                                            </label>  
+                                                                <span class="radio-span">
+                                                                    <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                                    <label class="likertClass" for="definitely">Long-term</label>
+                                                                </span>  
+                                                                <span class="radio-span">
+                                                                    <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                                    <label class="likertClass" for="maybe">short-term</label>
+                                                                </span>
+                                                                <span class="radio-span">
+                                                                    <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                                    <label class="likertClass" for="not-sure">Both</label>
+                                                                </span>
+                                                               
+                                                                <label class="labelClass-non-check-radio radioLabelClass">Have you ever had to collaborate with a team on a project?
+                                                                </label>  
+                                                                    <span class="radio-span">
+                                                                        <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                                        <label class="likertClass" for="definitely">Yes</label>
+                                                                    </span>  
+                                                                    <span class="radio-span">
+                                                                        <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                                        <label class="likertClass" for="maybe">No</label>
+                                                                    </span>
+                                                                    
+                                                                    <label class="labelClass-non-check-radio radioLabelClass">How do you handle working with clients from different time zones?
+                                                                    </label>  
+                                                                        <span class="radio-span">
+                                                                            <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                                            <label class="likertClass" for="definitely">Flexible working hours</label>
+                                                                        </span>  
+                                                                        <span class="radio-span">
+                                                                            <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                                            <label class="likertClass" for="maybe">Schedule calls or meetings at mutually convenient times</label>
+                                                                        </span>
+                                                                        <span class="radio-span">
+                                                                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                                            <label class="likertClass" for="not-sure">Work during off hours</label>
+                                                                        </span>
+                                                                        <span class="radio-span">
+                                                                            <input class="likertClass" type="radio" id="not-sure" name="likert-scale" value="Not-sure">
+                                                                            <label class="likertClass" for="not-sure">  Other</label>
+                                                                        </span>
+                                                                        <label class="labelClass-non-check-radio radioLabelClass">Have you ever had to handle a project with a tight deadline?
+                                                                        </label>  
+                                                                            <span class="radio-span">
+                                                                                <input class="likertClass" type="radio" id="definitely" name="likert-scale" value="Definitely">
+                                                                                <label class="likertClass" for="definitely">Yes</label>
+                                                                            </span>  
+                                                                            <span class="radio-span">
+                                                                                <input class="likertClass" type="radio" id="maybe" name="likert-scale" value="Maybe">
+                                                                                <label class="likertClass" for="maybe"> No</label>
+                                                                            </span>
+                                                                            
+
+            <input class="btn" type="submit" value="Submit" onclick="window.location.href='https://www.example.com'">
+        </div>
+    </body>
+</html>
